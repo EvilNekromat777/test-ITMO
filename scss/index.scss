@@ -1,12 +1,9 @@
-// Подключаем шрифты
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap');
-
-// Шрифт по умолчанию
-$fontfamili: "Lato";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 // Подключаем файлы со стилями страниц и элементов
 @import "header.scss";
 @import "footer.scss";
+@import "fonts.scss";
 
 // Обнуление: общие параметры
 @import "null.scss";
@@ -19,6 +16,7 @@ $fontfamili: "Lato";
     overflow: hidden;
     min-height: 100%;
     width: 100%;
+	 position: relative;
 }
 
 // Основной блок
