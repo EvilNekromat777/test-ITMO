@@ -1,0 +1,50 @@
+.map{
+	margin: 80px 0px 0px 0px;
+	position: relative;
+	&__form{
+		margin: 80px 0px 0px 0px;
+		max-width: 488px;
+		background: #FFFFFF;
+		border-radius: 8px;
+		padding: 40px 71px;
+	}
+	&__p{
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 22px;
+		color: #222222;
+	}
+	&__p_adress{
+		margin: 16px 0px 12px 0px;
+	}
+	&__container{
+		max-width: 1216px;
+		width: 100%;
+		height: 456px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+		border: 1px solid rgba(255, 0, 0, 0);
+	}
+	iframe{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+}
+
+//==========================================>
+@media (max-width: 987px){
+	.map{
+		&__form{
+			margin: 40px 0px 0px 0px;
+			max-width: 488px;
+			background: #FFFFFF;
+			border-radius: 8px;
+			padding: 20px 20px;
+		}
+	}
+}
