@@ -301,7 +301,37 @@
 				</div>
 			</div>
 		</footer>
+
+		<section class="popup popup_edit">
+
+			<div class="popup__content">
+				<div class="popup__close"><img src="./images/Shape.svg" alt="закрыть"></div>
+				<h4 class="popup__title">Напишите нам!</h4>
+				<div class="popup__form-container">
+					<form class="form form__edit" name="informationForm" novalidate>
+						<fieldset class="form__fieldset">
+							<label for="name">Ваши фамилия и имя<span>*</span></label>
+							<input type="text" name="name" id="name" class="form__input-container form__input-container_name"
+								placeholder="Введите ваше имя" required minlength="2" maxlength="40">
+							<span class="form__error" id="nameProfile-error"></span>
+							<label for="email">Электронная почта<span>*</span></label>
+							<input type="text" name="email" id="email" class="form__input-container form__input-container_job"
+								placeholder="primer@itmo.ru" required minlength="2" maxlength="200">
+							<span class="form__error" id="jobProfile-error"></span>
+							<label for="textarea" class="form-label">Что непонятно или нужно уточнить </label>
+							<textarea class="form-control" id="textarea" rows="3"
+								placeholder="Введите ваше сообщение"></textarea>
+						</fieldset>
+						<p>Отправляя данную форму, вы даете согласие на обработку своих <a href="#">Персональных данных</a>
+						</p>
+					</form>
+					<button class="button popup__submit">Сохранить</button>
+				</div>
+			</div>
+		</section>
 	</div>
+
+
 
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">

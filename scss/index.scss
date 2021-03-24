@@ -8,12 +8,15 @@
 @import "news.scss";
 @import "disciplines.scss";
 @import "map.scss";
+@import "popup.scss";
 
 
 @import "null.scss";
 @import "mixins.scss";
 
-
+body.lock{
+	overflow:hidden
+}
 .wrapper {
     overflow: hidden;
     min-height: 100%;

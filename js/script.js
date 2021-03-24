@@ -1,10 +1,8 @@
 //Меню бургер
-$(document).ready(function() {
 	$('.header__burger').click(function(event) {
 		$('.header__burger,.header__menu').toggleClass('active');
 		$('body').toggleClass('lock');
 	});
-});
 
 //======================================================>
 
@@ -28,4 +26,39 @@ $('.accordion').each(function () {
 			  $(this).next().slideDown();
 		 }
 	});
+});
+
+//======================================================>
+ //Скрыть placeholder при клике
+ $(document).ready(function () {
+	$('.form__input-container, .form-control').focus(function () {
+		$(this).data('placeholder', $(this).attr('placeholder'));
+		$(this).attr('placeholder', '');
+	});
+	$('input').blur(function () {
+		$(this).attr('placeholder', $(this).data('placeholder'));
+	});
+});
+
+//======================================================>
+
+//Popup
+$('.button__map').click(function(){
+	$('.popup').addClass('active');
+	$('body').addClass('lock');
+});
+$('.popup__close').click(function(){
+	$('.popup').removeClass('active');
+	$('body').removeClass('lock');
+});
+
+//Закрытие на оверлей
+$('.popup').click( function(e){
+	if ( $(e.target).closest('.popup__content').length ) {
+		 // клик внутри элемента 
+		 return;
+	}
+	// клик снаружи элемента 
+	$('.popup').removeClass('active');
+	$('body').removeClass('lock');
 });
