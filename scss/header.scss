@@ -2,7 +2,8 @@
 	max-width: 2034px;
 	width: 100%;
 	padding: 0px 40px 0px 40px;
-	position: fixed;
+	//position: fixed;
+	position: relative;
 	background: url('../images/header/02.png') no-repeat;
 	z-index: 2;
 	&__top{
@@ -12,6 +13,7 @@
 		justify-content: space-between;
 		align-items: center;
 		position: relative;
+		//position: fixed;
 		z-index: 2;
 	}
 	&__language{
@@ -54,6 +56,7 @@
 			font-size: 28px;
 			line-height: 28px;
 			color: #222222;
+			margin: 0;
 		}
 	}
 	&__menu{
@@ -63,6 +66,7 @@
 	&__list{
 		display: flex;
 		position: relative;
+		margin: 0;
 		li{
 			font-family: Open Sans;
 			font-style: normal;
@@ -164,7 +168,7 @@
 
 	.header__menu {
 		position: fixed;
-		top: 40px;
+		top: 0px;
 		left: -100%;
 		width: 100%;
 		height: 100%;

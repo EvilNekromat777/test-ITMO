@@ -1,0 +1,17 @@
+.button{
+	background: #F21F5B;
+	border-radius: 50px;
+	color: #F7F9FE;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 32px;
+	&:hover{
+		opacity: .8;
+	}
+	&__bunner{
+		width: 136px;
+		height: 48px;
+	}
+}

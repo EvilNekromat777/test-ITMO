@@ -4,6 +4,8 @@
 @import "header.scss";
 @import "footer.scss";
 @import "fonts.scss";
+@import "bunner.scss";
+@import "button.scss";
 
 // Обнуление: общие параметры
 @import "null.scss";
@@ -15,8 +17,10 @@
 .wrapper {
     overflow: hidden;
     min-height: 100%;
+	 max-width: 2034px;
     width: 100%;
 	 position: relative;
+	 margin: 0 auto;
 }
 
 // Основной блок
