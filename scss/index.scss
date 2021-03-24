@@ -1,20 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
-// Подключаем файлы со стилями страниц и элементов
 @import "header.scss";
 @import "footer.scss";
 @import "fonts.scss";
 @import "bunner.scss";
 @import "button.scss";
 @import "news.scss";
+@import "disciplines.scss";
 
-// Обнуление: общие параметры
+
 @import "null.scss";
-
-// Миксины
 @import "mixins.scss";
 
-// Оболочка
+
 .wrapper {
     overflow: hidden;
     min-height: 100%;
@@ -24,39 +22,15 @@
 	 margin: 0 auto;
 }
 
-// Основной блок
-.page {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    @include flexbox();
-    flex-direction: column;
-}
-
-// Основная сетка
-.contaner {
-    max-width: 1130px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
-.ibg {
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.ibg img {
-
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
+.title{
+	font-family: Muller;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 40px;
+	color: #222222;
+	margin: 0;
+	&__disciplines{
+		text-align: center;
+	}
 }

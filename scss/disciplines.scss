@@ -1,0 +1,79 @@
+.disciplines{
+	padding: 80px 0px 0px 0px;
+	max-width: 1216px;
+	margin: 0 auto;
+}
+
+
+/*Accordion*/
+.accordion {
+	max-width: 592px;
+	width: 100%;
+	margin: 32px auto 0px;
+}
+.accordion .accordion-head {
+	border: 1px solid #EAEFFC;
+	box-sizing: border-box;
+	border-radius: 8px;
+	position: relative;
+	//height: 72px;
+	cursor: pointer;
+	overflow: hidden;
+	margin: 8px 0px 0px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px 32px;
+}
+.accordion .accordion-head * {
+	cursor: pointer;
+}
+.accordion .accordion-head h4 {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.0016px;
+	color: #222222;
+	margin: 0;
+}
+.accordion .accordion-body {
+	border: 1px solid #EAEFFC;
+	border-top: none;
+	border-radius: 8px;
+	padding: 16px 32px 0 32px;
+	display: none;
+	p{
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.0016px;
+		color: #222222;
+	}
+}
+.arrow {
+	margin: 10px 0px 0px 0px;
+	background: url('../images/arrow-down.png') no-repeat;
+	background-size: contain;
+	width: 10px;
+	height: 16px;
+	
+}
+.accordion-head.open .arrow {
+	background: url('../images/arrow-up.png') no-repeat;
+	background-size: contain;
+	width: 10px;
+	height: 16px;
+}
+.close:focus, .close:hover {
+	opacity: 1;
+}
+.close {
+	opacity: 1;
+}
+

@@ -315,15 +315,6 @@
   max-width: 1216px;
   margin: 0 auto;
 }
-.news__title {
-  font-family: Muller;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 40px;
-  color: #222222;
-  margin: 0;
-}
 .news__items {
   display: flex;
   justify-content: space-between;
@@ -400,11 +391,96 @@
   .news__item:nth-of-type(3n) {
     margin-right: 0px;
   }
-  .news__title {
+
+  .title__news {
     font-size: 30px;
     line-height: 30px;
   }
 }
+.disciplines {
+  padding: 80px 0px 0px 0px;
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+/*Accordion*/
+.accordion {
+  max-width: 592px;
+  width: 100%;
+  margin: 32px auto 0px;
+}
+
+.accordion .accordion-head {
+  border: 1px solid #EAEFFC;
+  box-sizing: border-box;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 8px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+}
+
+.accordion .accordion-head * {
+  cursor: pointer;
+}
+
+.accordion .accordion-head h4 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0016px;
+  color: #222222;
+  margin: 0;
+}
+
+.accordion .accordion-body {
+  border: 1px solid #EAEFFC;
+  border-top: none;
+  border-radius: 8px;
+  padding: 16px 32px 0 32px;
+  display: none;
+}
+.accordion .accordion-body p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.0016px;
+  color: #222222;
+}
+
+.arrow {
+  margin: 10px 0px 0px 0px;
+  background: url("../images/arrow-down.png") no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 16px;
+}
+
+.accordion-head.open .arrow {
+  background: url("../images/arrow-up.png") no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 16px;
+}
+
+.close:focus, .close:hover {
+  opacity: 1;
+}
+
+.close {
+  opacity: 1;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -505,35 +581,15 @@ h6 {
   margin: 0 auto;
 }
 
-.page {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
+.title {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  color: #222222;
+  margin: 0;
 }
-
-.contaner {
-  max-width: 1130px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.ibg {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.ibg img {
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
+.title__disciplines {
+  text-align: center;
 }
