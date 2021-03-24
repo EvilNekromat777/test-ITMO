@@ -193,6 +193,135 @@
     font-size: 24px;
   }
 }
+.footer {
+  width: 100%;
+  background: #232473;
+  padding: 32px 0px 0px 0px;
+}
+.footer__container {
+  max-width: 1216px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0px 15px 0px 15px;
+}
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0px 0px 24px 0px;
+}
+.footer__info {
+  max-width: 310px;
+}
+.footer__info p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: -0.507px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin: 28px 0px 0px 0px;
+}
+.footer__links {
+  display: flex;
+  margin: 0px 15px 0px 15px;
+}
+.footer__links-item {
+  padding: 0;
+}
+.footer__links-item li {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer__links-item li a {
+  color: #FFFFFF;
+}
+.footer__links-item li:hover {
+  opacity: 0.8;
+}
+.footer__links-item_margin_right {
+  margin-right: 32px;
+}
+.footer__adress p {
+  margin: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.footer__social p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.507px;
+  color: #FFFFFF;
+  margin: 24px 0px 8px 0px;
+}
+.footer__social-icons a {
+  margin: 0px 5px 0px 0px;
+}
+.footer__copyright {
+  background: #1A1B57;
+}
+.footer__copyright-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
+}
+.footer__copyright-body a {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.507px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+@media (max-width: 767px) {
+  .footer__copyright-body {
+    display: block;
+  }
+  .footer__copyright-body a {
+    display: block;
+  }
+}
+@media (max-width: 426px) {
+  .footer__links {
+    margin: 0px;
+  }
+  .footer__info {
+    order: 3;
+    margin: 30px 0px 0px 0px;
+  }
+  .footer__links {
+    order: 1;
+  }
+  .footer__social-info {
+    order: 2;
+  }
+}
+@media (max-width: 374px) {
+  .footer {
+    padding: 20px 0px 0px 0px;
+  }
+  .footer__links {
+    display: block;
+  }
+}
 @font-face {
   font-style: normal;
   font-weight: 600;
@@ -631,14 +760,6 @@ h6 {
   width: 100%;
   position: relative;
   margin: 0 auto;
-}
-
-.container {
-  max-width: 1216px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  border: 2px solid red;
 }
 
 .title {

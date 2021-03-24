@@ -1,0 +1,139 @@
+.footer{
+	width: 100%;
+	background: #232473;
+	padding: 32px 0px 0px 0px;
+	&__container{
+		max-width: 1216px;
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+		padding: 0px 15px 0px 15px;
+	}
+	&__body{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 0px 0px 24px 0px;
+	}
+	&__info{
+		max-width: 310px;
+		p{
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 24px;
+			letter-spacing: -0.507px;
+			color: #FFFFFF;
+			mix-blend-mode: normal;
+			opacity: 0.5;
+			margin: 28px 0px 0px 0px;
+		}
+	}
+	&__links{
+		display: flex;
+		margin: 0px 15px 0px 15px;
+	}
+	&__links-item{
+		padding: 0;
+		li{
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 24px;
+			a{
+				color: #FFFFFF;
+			}
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+	}
+	&__links-item_margin_right{
+		margin-right: 32px;
+	}
+	&__adress{
+		p{
+			margin: 0;
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 24px;
+			color: #FFFFFF;
+			opacity: 0.5;
+		}
+	}
+	&__social{
+		p{
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 18px;
+			letter-spacing: -0.507px;
+			color: #FFFFFF;
+			margin: 24px 0px 8px 0px;
+		}
+	}
+	&__social-icons{
+		a{
+			margin: 0px 5px 0px 0px;
+		}
+	}
+	&__copyright{
+		background: #1A1B57;
+	}
+	&__copyright-body{
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 0px 10px 0px;
+		a{
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 18px;
+			letter-spacing: -0.507px;
+			color: #FFFFFF;
+			opacity: 0.5;
+		}
+	}
+}
+//===================================>
+@media (max-width: 767px){
+	.footer{
+		&__copyright-body{
+			display: block;
+			a{
+				display: block;
+			}
+		}
+	}
+}
+@media (max-width: 426px){
+	.footer{
+		&__links{
+			margin: 0px;
+		}
+		&__info{
+			order:3;
+			margin: 30px 0px 0px 0px;
+		}
+		&__links{
+			order:1;
+		}
+		&__social-info{
+			order:2;
+		}
+}
+}
+@media (max-width: 374px){
+	.footer{
+		padding: 20px 0px 0px 0px;
+		&__links{
+			display: block;
+		}
+	}
+}
