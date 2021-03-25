@@ -84,9 +84,12 @@
   padding: 0;
 }
 
-@media (max-width: 1376px) {
+@media (max-width: 1390px) {
   .header {
     padding: 0px 15px 0px 15px;
+  }
+  .header__title p {
+    font-size: 24px;
   }
 }
 @media (max-width: 958px) {
@@ -98,7 +101,7 @@
     font-size: 20px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   body.lock {
     overflow: hidden;
   }
