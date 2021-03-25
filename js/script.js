@@ -64,8 +64,7 @@ $('.popup').click( function(e){
 });
 
 
-//====================================================================>
-
+//==============================================================================>
 //Отправка формы на почту
 document.addEventListener('DOMContentLoaded', function () {
 	const form = document.getElementById('form');
@@ -76,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		let error = formValidate(form);
 
+		let formData = new FormData(form);
 
 		if (error === 0) {
 			form.classList.add('_sending');
@@ -113,6 +113,9 @@ document.addEventListener('DOMContentLoaded', function () {
 					formAddError(input);
 					error++;
 				}
+			} else if (input.getAttribute("type") === "checkbox" && input.checked === false) {
+				formAddError(input);
+				error++;
 			} else {
 				if (input.value === '') {
 					formAddError(input);
@@ -134,4 +137,5 @@ document.addEventListener('DOMContentLoaded', function () {
 	function emailTest(input) {
 		return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 	}
+
 });

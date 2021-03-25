@@ -11,20 +11,14 @@
 	$mail->IsHTML(true);
 
 	//От кого письмо
-	$mail->setFrom('kireeva-web@kireeva-web.ru', 'Тестовое задание для ИТМО');
+	$mail->setFrom('kireeva-web@kireeva-web.ru', 'Тестовое задание Киреева Е.Н.');
 	//Кому отправить
-	$mail->addAddress('evil-nekromat777@mail.ru');
+	$mail->addAddress('it-hr@itmo.ru');
 	//Тема письма
-	$mail->Subject = 'Тестовое задание для ИТМО';
-
-	//Рука
-	//$hand = "Работа full-time";
-	//if($_POST['hand'] == "left"){
-	//	$hand = "Разовый проект";
-	//}
+	$mail->Subject = 'Тестовое задание Киреева Е.Н.';
 
 	//Тело письма
-	$body = '<h1>Тестовое задание для ИТМО</h1>';
+	$body = '<h1>Тестовое задание Киреева Е.Н.</h1>';
 	
 	if(trim(!empty($_POST['name']))){
 		$body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
@@ -32,28 +26,10 @@
 	if(trim(!empty($_POST['email']))){
 		$body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
 	}
-	//if(trim(!empty($_POST['hand']))){
-	//	$body.='<p><strong>Рука:</strong> '.$hand.'</p>';
-	//}
-	//if(trim(!empty($_POST['age']))){
-	//	$body.='<p><strong>Возраст:</strong> '.$_POST['age'].'</p>';
-	//}
 	
 	if(trim(!empty($_POST['message']))){
 		$body.='<p><strong>Сообщение:</strong> '.$_POST['message'].'</p>';
 	}
-	
-	//Прикрепить файл
-	//if (!empty($_FILES['image']['tmp_name'])) {
-	//	//путь загрузки файла
-	//	$filePath = __DIR__ . "/files/" . $_FILES['image']['name']; 
-	//	//грузим файл
-	//	if (copy($_FILES['image']['tmp_name'], $filePath)){
-	//		$fileAttach = $filePath;
-	//		$body.='<p><strong>Фото в приложении</strong>';
-	//		$mail->addAttachment($fileAttach);
-	//	}
-	//}
 
 	$mail->Body = $body;
 
