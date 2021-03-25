@@ -140,7 +140,24 @@
 	.popup{
 		&__title{
 			font-size: 26px;
-			margin: 20px 0px 40px 0px;
+			margin: 10px 0px 10px 0px;
+		}
+		&__content{
+			padding: 10px 10px 15px 10px;
+		}
+		&__submit{
+			margin: 10px 0px 0px 0px;
+		}
+		&__close{
+			padding: 0px 10px 0px 0px;
+		}
+	}
+	.form__input-container{
+		margin: 8px 0px 10px 0px;
+	}
+	.form{
+		textarea{
+			margin: 0px 0px 10px 0px;
 		}
 	}
 	}

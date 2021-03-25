@@ -186,6 +186,7 @@
 
   .header__list {
     display: block;
+    padding: 0;
   }
 
   .header__list li {
@@ -812,7 +813,24 @@
 @media screen and (max-width: 424px) {
   .popup__title {
     font-size: 26px;
-    margin: 20px 0px 40px 0px;
+    margin: 10px 0px 10px 0px;
+  }
+  .popup__content {
+    padding: 10px 10px 15px 10px;
+  }
+  .popup__submit {
+    margin: 10px 0px 0px 0px;
+  }
+  .popup__close {
+    padding: 0px 10px 0px 0px;
+  }
+
+  .form__input-container {
+    margin: 8px 0px 10px 0px;
+  }
+
+  .form textarea {
+    margin: 0px 0px 10px 0px;
   }
 }
 * {
